@@ -18,5 +18,6 @@ transcript=soup.find('div',class_='full-script').get_text(separator=' ')
 print(transcript)
 
 #exporting data to text file
-with open('titanic.txt','w',encoding='utf-8') as f:
+# with open('titanic.txt','w',encoding='utf-8') as f:
+with open(f'{heading}.txt','w',encoding='utf-8') as f:
     f.write(transcript)
